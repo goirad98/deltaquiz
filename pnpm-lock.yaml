@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/courier-prime':
+    specifier: ^5.0.19
+    version: 5.0.19
+  '@fontsource/jersey-10':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@fortawesome/fontawesome-svg-core':
     specifier: ^6.5.2
     version: 6.5.2
@@ -525,6 +531,14 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource/courier-prime@5.0.19:
+    resolution: {integrity: sha512-zjLYVpNiegmsN6DDl+vzf3lQABnWg/6U1P7sDsbxD5pAwxs/b+DwLTGxOSkwXummTBjZvP5D7ySCqmRxNy77Dw==}
+    dev: false
+
+  /@fontsource/jersey-10@5.0.1:
+    resolution: {integrity: sha512-Or12lvUZWPXXdQLgn8mBNqVz0Hp0Bg9hHIyZFfJdHCmOkFSBYzTjUDu0Qjfo15UIkQB0conixKKlm0elF5ak6Q==}
+    dev: false
 
   /@fortawesome/fontawesome-common-types@6.5.2:
     resolution: {integrity: sha512-gBxPg3aVO6J0kpfHNILc+NMhXnqHumFxOmjYCFfOiLZfwhnnfhtsdA2hfJlDnj+8PjAs6kKQPenOTKj3Rf7zHw==}

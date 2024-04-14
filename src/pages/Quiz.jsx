@@ -12,13 +12,13 @@ const Quiz = () => {
         return (
             <div className='container'>
                 <div className='vh-100 d-flex flex-column gap-4 justify-content-center align-items-center'>
-                    <div className='d-flex flex-column gap-3 align-items-center' style={{ width: '200px' }}>
-                        <h3>Resultado</h3>
+                    <div className='d-flex flex-column gap-3 align-items-center' style={{ width: '300px' }}>
+                        <h3>RESULTADO</h3>
 
-                        <div className='w-100 card bg-body-tertiary'>
-                            <div className='card-body d-flex flex-column gap-3 justify-content-center align-items-center'>
-                                <img className='member-avatar' src={result.picture}/>
-                                <h3>{result.name}</h3>
+                        <div className='w-100 member-card'>
+                            <div className='p-3 d-flex flex-column gap-3 justify-content-center align-items-center'>
+                                <img className='member-avatar shadow-lg' src={result.picture}/>
+                                <h3>{result.name.toUpperCase()}</h3>
                             </div>
                         </div>
 
