@@ -8,9 +8,6 @@ dependencies:
   '@fontsource/courier-prime':
     specifier: ^5.0.19
     version: 5.0.19
-  '@fontsource/jersey-10':
-    specifier: ^5.0.1
-    version: 5.0.1
   '@fortawesome/fontawesome-svg-core':
     specifier: ^6.5.2
     version: 6.5.2
@@ -534,10 +531,6 @@ packages:
 
   /@fontsource/courier-prime@5.0.19:
     resolution: {integrity: sha512-zjLYVpNiegmsN6DDl+vzf3lQABnWg/6U1P7sDsbxD5pAwxs/b+DwLTGxOSkwXummTBjZvP5D7ySCqmRxNy77Dw==}
-    dev: false
-
-  /@fontsource/jersey-10@5.0.1:
-    resolution: {integrity: sha512-Or12lvUZWPXXdQLgn8mBNqVz0Hp0Bg9hHIyZFfJdHCmOkFSBYzTjUDu0Qjfo15UIkQB0conixKKlm0elF5ak6Q==}
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.5.2:
