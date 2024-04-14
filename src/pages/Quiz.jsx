@@ -15,12 +15,12 @@ const Quiz = () => {
                     <div className='d-flex flex-column gap-3 align-items-center' style={{ width: '300px' }}>
                         <h3>RESULTADO</h3>
 
-                        <button className='w-100 member-card'>
+                        <div className='w-100 member-card'>
                             <div className='p-3 d-flex flex-column gap-3 justify-content-center align-items-center'>
                                 <img className='member-avatar shadow-lg' src={result.picture}/>
                                 <h3>{result.name.toUpperCase()}</h3>
                             </div>
-                        </button>
+                        </div>
 
                         <ButtonLink
                             to={APP_ROUTES.Home}
@@ -49,13 +49,13 @@ const Quiz = () => {
                         <div className='d-flex flex-column gap-3'>
                             {
                             currentQuestion.answers.map((answer, index) =>
-                                    <div
+                                    <button
                                         className='button-card'
                                         key={index}
                                         onClick={() => handleAnswer(index)}
                                     >
                                         {answer}
-                                    </div>
+                                    </button>
                                 )
                             }
                         </div>
