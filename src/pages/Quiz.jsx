@@ -22,19 +22,19 @@ const Quiz = () => {
                             </div>
                         </div>
 
-                        <h4 className='m-0 p-0'>PRÓXIMOS</h4>
+                        <h5 className='m-0 p-0'>PRÓXIMOS</h5>
 
                         <div className='w-100 member-card'>
                             <div className='px-3 py-2 d-flex gap-3 justify-content-center align-items-center'>
                                 <img className='member-avatar-min' src={results[1].picture}/>
-                                <h3 className='m-0 p-0'>{results[1].name.toUpperCase()}</h3>
+                                <h5 className='m-0 p-0'>{results[1].name.toUpperCase()}</h5>
                             </div>
                         </div>
 
                         <div className='w-100 member-card'>
                             <div className='px-3 py-2 d-flex gap-3 justify-content-center align-items-center'>
                                 <img className='member-avatar-min' src={results[2].picture}/>
-                                <h3 className='m-0 p-0'>{results[2].name.toUpperCase()}</h3>
+                                <h5 className='m-0 p-0'>{results[2].name.toUpperCase()}</h5>
                             </div>
                         </div>
 
