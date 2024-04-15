@@ -123,6 +123,6 @@ const MEMBERS = [
     { answers: [0, 2, 0, 1, 0, 2], name: 'Kat', picture: KAT_AVATAR },
 ]
 
-const VERSION = 'VER. 2024-04-15 11:50'
+const VERSION = 'VER. 2024-04-15 13:00'
 
 export { QUESTIONS, MEMBERS, VERSION }
