@@ -7,18 +7,34 @@ const Quiz = () => {
     const { isLoading, isQuizFinished, getCurrentQuestion, getStatus, handleAnswer, getResult } = useQuiz()
 
     if (isQuizFinished()) {
-        const result = getResult()
+        const results = getResult()
 
         return (
             <div className='container'>
                 <div className='vh-100 d-flex flex-column gap-4 justify-content-center align-items-center'>
                     <div className='d-flex flex-column gap-3 align-items-center' style={{ width: '300px' }}>
-                        <h3>RESULTADO</h3>
+                        <h3 className='m-0 p-0'>RESULTADO</h3>
+
+                        <div className='w-100 member-card member-card-gold'>
+                            <div className='p-3 d-flex flex-column gap-3 justify-content-center align-items-center'>
+                                <img className='member-avatar shadow-lg' src={results[0].picture}/>
+                                <h3>{results[0].name.toUpperCase()}</h3>
+                            </div>
+                        </div>
+
+                        <h4 className='m-0 p-0'>PRÓXIMOS</h4>
 
                         <div className='w-100 member-card'>
-                            <div className='p-3 d-flex flex-column gap-3 justify-content-center align-items-center'>
-                                <img className='member-avatar shadow-lg' src={result.picture}/>
-                                <h3>{result.name.toUpperCase()}</h3>
+                            <div className='px-3 py-2 d-flex gap-3 justify-content-center align-items-center'>
+                                <img className='member-avatar-min' src={results[1].picture}/>
+                                <h3 className='m-0 p-0'>{results[1].name.toUpperCase()}</h3>
+                            </div>
+                        </div>
+
+                        <div className='w-100 member-card'>
+                            <div className='px-3 py-2 d-flex gap-3 justify-content-center align-items-center'>
+                                <img className='member-avatar-min' src={results[2].picture}/>
+                                <h3 className='m-0 p-0'>{results[2].name.toUpperCase()}</h3>
                             </div>
                         </div>
 
