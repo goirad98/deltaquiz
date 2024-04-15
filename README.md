@@ -1,5 +1,7 @@
 # DeltaQuiz
 
+![home](imgs/home.png)
+
 [HAZ EL QUIZ - LINK](https://deltaquiz.vercel.app)
 
 Prueba de quiz sobre los miembros de la pandi
