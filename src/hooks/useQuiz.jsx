@@ -50,7 +50,8 @@ const useQuiz = () => {
             }
         })
 
-        const sortedResults = results.sort((memberOne, memberTwo) => memberOne.points > memberTwo.points ? 1 : -1)
+        const sortedResults = results.sort((memberOne, memberTwo) => memberOne.points > memberTwo.points || (memberOne.name >= memberTwo.name && memberOne.points >= memberTwo.points) ? 1 : -1)
+        console.log(sortedResults)
         return sortedResults
     }
 
