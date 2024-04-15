@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { questions, MEMBERS } from '../constants/data'
+import { QUESTIONS, MEMBERS } from '../constants/data'
 
 const useQuiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -8,7 +8,7 @@ const useQuiz = () => {
     const [isLoading, setIsLoading] = useState(false)
 
     const handleNextQuestion = () => {
-        if (currentQuestion < questions.length - 1) {
+        if (currentQuestion < QUESTIONS.length - 1) {
             setCurrentQuestion(currentQuestion + 1)
         } else {
             setIsFinished(true)
@@ -27,11 +27,11 @@ const useQuiz = () => {
     }
 
     const getCurrentQuestion = () => {
-        return questions[currentQuestion]
+        return QUESTIONS[currentQuestion]
     }
 
     const getStatus = () => {
-        return currentQuestion / questions.length
+        return currentQuestion / QUESTIONS.length
     }
 
     const isQuizFinished = () => {
@@ -50,7 +50,9 @@ const useQuiz = () => {
             }
         })
 
-        return results.sort((memberOne, memberTwo) => memberOne.points - memberTwo.points)[0]
+        const sortedResults = results.sort((memberOne, memberTwo) => memberOne.points > memberTwo.points ? 1 : -1)
+        console.log(sortedResults)
+        return sortedResults[0]
     }
 
     return {

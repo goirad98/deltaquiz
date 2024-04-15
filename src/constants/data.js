@@ -8,6 +8,7 @@
         }
     }
 */
+
 import ACCEL_AVATAR from './pictures/accel.jpg'
 import ASAMI_AVATAR from './pictures/asami.jpg'
 import CHITO_AVATAR from './pictures/chito.jpg'
@@ -27,7 +28,7 @@ import RAY_AVATAR from './pictures/ray.jpg'
 import XYGE_AVATAR from './pictures/xyge.jpg'
 import YAKKARI_AVATAR from './pictures/yakkari.jpg'
 
-const questions = [
+const QUESTIONS = [
     {
         text: '¿Qué tan weeb eres?',
         answers: [
@@ -78,6 +79,7 @@ const questions = [
     }
 ]
 
+/*
 const MEMBERS = [
     { name: 'Danito', answers: [0, 2, 2, 2, 0, 2], picture: DANITO_AVATAR },
     { name: 'Accel', answers: [2, 0, 0, 2, 1, 1], picture: ACCEL_AVATAR },
@@ -98,5 +100,29 @@ const MEMBERS = [
     { name: 'Chito', answers: [2, 0, 1, 0, 2, 2], picture: CHITO_AVATAR },
     { name: 'Kat', answers: [0, 2, 0, 1, 0, 2], picture: KAT_AVATAR },
 ]
+*/
 
-export { questions, MEMBERS }
+const MEMBERS = [
+    { answers: [0, 2, 2, 2, 0, 2], name: 'Danito', picture: DANITO_AVATAR },
+    { answers: [2, 0, 0, 2, 1, 1], name: 'Accel', picture: ACCEL_AVATAR },
+    { answers: [0, 0, 1, 0, 2, 0], name: 'Netaros', picture: NETAROS_AVATAR },
+    { answers: [2, 2, 1, 2, 1, 0], name: 'Ray', picture: RAY_AVATAR },
+    { answers: [0, 0, 1, 1, 1, 2], name: 'Goirad', picture: GOIRAD_AVATAR },
+    { answers: [1, 0, 1, 2, 2, 0], name: 'Kaiza', picture: KAIZA_AVATAR },
+    { answers: [2, 0, 1, 0, 2, 0], name: 'Xyge', picture: XYGE_AVATAR },
+    { answers: [2, 0, 2, 1, 1, 2], name: 'Yakkari', picture: YAKKARI_AVATAR },
+    { answers: [2, 2, 2, 0, 1, 2], name: 'Lery', picture: LERY_AVATAR },
+    { answers: [2, 2, 0, 0, 0, 0], name: 'Ismael', picture: ISMAEL_AVATAR },
+    { answers: [1, 1, 1, 0, 2, 1], name: 'Jam', picture: JAM_AVATAR },
+    { answers: [0, 0, 0, 0, 0, 2], name: 'Jehu', picture: JEHU_AVATAR },
+    { answers: [0, 0, 0, 0, 2, 0], name: 'Gobo', picture: GOBO_AVATAR },
+    { answers: [2, 2, 0, 0, 0, 0], name: 'Haruka', picture: HARUKA_AVATAR },
+    { answers: [2, 0, 0, 0, 0, 2], name: 'Gaen', picture: GAEN_AVATAR },
+    { answers: [2, 0, 2, 0, 2, 0], name: 'Asami', picture: ASAMI_AVATAR },
+    { answers: [2, 0, 1, 0, 2, 2], name: 'Chito', picture: CHITO_AVATAR },
+    { answers: [0, 2, 0, 1, 0, 2], name: 'Kat', picture: KAT_AVATAR },
+]
+
+const VERSION = 'VER. 2024-04-15 11:50'
+
+export { QUESTIONS, MEMBERS, VERSION }

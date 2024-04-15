@@ -1,7 +1,7 @@
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { ButtonLink, Loading, Status } from '../components/basics'
-import APP_ROUTES from '../constants/routes'
 import { useQuiz } from '../hooks'
+import APP_ROUTES from '../constants/routes'
 
 const Quiz = () => {
     const { isLoading, isQuizFinished, getCurrentQuestion, getStatus, handleAnswer, getResult } = useQuiz()

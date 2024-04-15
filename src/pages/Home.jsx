@@ -1,6 +1,7 @@
 import { faPlay, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { ButtonLink } from '../components/basics'
 import APP_ROUTES from '../constants/routes'
+import { VERSION } from '../constants/data'
 
 const Home = () => {
     return (
@@ -24,6 +25,8 @@ const Home = () => {
                     icon={faUserGroup}
                 />
             </div>
+
+            <small>{VERSION}</small>
         </div>
     )
 }
