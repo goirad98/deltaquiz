@@ -1,8 +1,14 @@
-# React + Vite
+# DeltaQuiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[HAZ EL QUIZ - LINK](https://deltaquiz.vercel.app)
 
-Currently, two official plugins are available:
+Prueba de quiz sobre los miembros de la pandi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## A tener en cuenta
+- Actualmente, el algoritmo puede llevar a doble o triples empates
+- Con el paso del tiempo la lista de miembros puede variar. Me disculpo, si no estás ahí en la versión actual
+
+## Créditos
+- Danito: cerebro galaxia, autor del quiz
+- goirad : programador, quien les habla
+- Jam: líder de la pandi (él que se lleva todos los ingresos)

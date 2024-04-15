@@ -7,7 +7,7 @@ const Members = () => {
         <div className='vh-100 container'>
             <div className='h-100 py-4 d-flex flex-column gap-4 justify-content-center align-items-center'>
                 <h3>ACTUALES MIEMBROS</h3>
-                <div className='w-100 d-flex flex-column gap-2 overflow-scroll'>
+                <div className='w-100 d-flex flex-column gap-2 overflow-y-scroll'>
                     {
                         members.map((member, index) =>
                             <div key={index} className={`mx-2 member-card`}>
